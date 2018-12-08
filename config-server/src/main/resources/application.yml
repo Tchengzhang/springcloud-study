@@ -1,0 +1,22 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Tchengzhang/springcloudtest/
+          search-paths: respo
+          #username:
+          #password:
+      label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8760/eureka/
+
+
+
+
